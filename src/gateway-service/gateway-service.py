@@ -267,7 +267,7 @@ def GWS_ticket_refund(ticketUid):
             routing_key='task_queue',
             body=cmd.encode(),
             properties=pika.BasicProperties(
-                delivery_mode=2,  # make message persistent
+                delivery_mode=2,
             ))
         connection.close()
     else:
