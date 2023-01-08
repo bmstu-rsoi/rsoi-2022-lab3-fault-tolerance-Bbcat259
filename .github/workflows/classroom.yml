@@ -32,6 +32,9 @@ jobs:
           WAIT_PORTS: 8080,8070,8060,8050
 
       # TODO setup variant, service and port
+      - name: Sleep for 25 seconds
+        run: sleep 25s
+        shell: bash
 
       - name: Run API Tests
         timeout-minutes: 5
