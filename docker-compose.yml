@@ -57,7 +57,7 @@ services:
       default:
         ipv4_address: 10.5.0.6
 
-rabbitmq:
+  rabbitmq:
     image: rabbitmq:3
     container_name: rabbitmq-cont
     ports:
@@ -74,8 +74,7 @@ rabbitmq:
     networks:
       default:
         ipv4_address: 10.5.0.8
-
-        
+       
 volumes:
   db-data:
 
